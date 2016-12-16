@@ -15,7 +15,7 @@ if (!empty($_POST['name']) AND !empty($_POST['email']) AND !empty($_POST['messag
     $letter .="\nСообщение: ".$_POST['message'];
     
     if (mail("hladysh.im@gmail.com", $theme, $letter, $headers)){
-      header("Location: thankyou.php");
+      header("Location: thankyou.html");
     } else {
       header("Location: /");
     }  
